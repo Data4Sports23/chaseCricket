@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddMatchOfficials"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutPLAYERLIST"
+    android:background="#ffffff"
+    android:layout_margin="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/customborder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/addmatchofficials"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextHeading"/>
+
+        </LinearLayout>
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingStart="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="17dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 1      :"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="8"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amo_umpire1"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+                    <!--android:background="@drawable/styyles"
+                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingStart="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 2      :"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="8"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amo_umpire2"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+                    <!--android:background="@drawable/styyles"
+                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingStart="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 3      :"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="8"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amo_umpire3"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+                    <!--android:background="@drawable/styyles"
+                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingStart="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 4      :"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="8"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amo_umpire4"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+                    <!--android:background="@drawable/styyles"
+                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingStart="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scorer        :"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="8"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amo_scorer"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+                    <!--android:background="@drawable/styyles"
+                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingStart="7dp"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Match Referee  :"
+                        android:textColor="@color/colorBlack"
+                        android:layout_weight="8"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/amo_referee"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:inputType="text"/>
+                    <!--android:background="@drawable/styyles"
+                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>-->
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="end"
+                    android:text="Save"
+                    android:background="@drawable/mybutton"
+                    android:id="@+id/amo_save"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

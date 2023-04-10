@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mo_end_over"
+        android:title="End Over"/>
+
+    <!--commneted on 30/02/2020
+    <item
+        android:id="@+id/mo_end_day"
+        android:title="End of Day"/>-->
+    <item
+        android:id="@+id/mo_end_innings"
+        android:title="End Innings"/>
+    <item
+        android:id="@+id/mo_forfeit"
+        android:title="Forfeit"/>
+    <item
+        android:id="@+id/mo_end_match"
+        android:title="End Match"/>
+    <item
+        android:id="@+id/mo_edit_match"
+        android:title="Edit Match Details">
+
+        <menu>
+
+            <item
+                android:id="@+id/mo_add_match_note"
+                android:title="@string/addmatchnote"/>
+            <item
+                android:id="@+id/mo_edit_match_officials"
+                android:title="@string/addmatchofficials"/>
+            <item
+                android:id="@+id/mo_change_player_name"
+                android:title="@string/addplayers"/>
+
+            <item
+                android:id="@+id/mo_change_team_name"
+                android:title="Change Team Name"/>
+
+
+
+<!--            ADDED ON 2702/2021-->
+            <item
+                android:id="@+id/mo_change_wk"
+                android:title="Change Wicketkeeper"/>
+            <item
+                android:id="@+id/mo_substitute_wk"
+                android:title="Substitute as Wicketkeeper"/>
+<!--            ========= till here ====-->
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/mo_powerplay"
+        android:title="Set Powerplay"/>
+    <!--Added on 02/03/2021 & commented on 03/03/2021
+    <item
+        android:id="@+id/mo_absent"
+        android:title="Set Absent"/>-->
+    <item
+        android:id="@+id/mo_change_match_over"
+        android:title="Reduce Match Over"/>
+    <item
+        android:id="@+id/mo_apply_substitution"
+        android:title="Apply Substitution"/>
+    <!--for check and uncheck the wagon wheel option-->
+    <item
+        android:id="@+id/mo_update_wagonwheel"
+        android:checkable="true"
+        android:title="Display WagonWheel" />
+
+
+
+
+</menu>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddPlayersA"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD SQUAD"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/colorTextHeading"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter"
+                android:id="@+id/txt_message1_a"
+                android:textColor="@color/colorText" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:id="@+id/team_name_a"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Squads (min. squad length = "
+                android:id="@+id/players_a"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:id="@+id/player_a_length"
+                android:textColor="@color/colorText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:textColor="@color/colorText" />
+
+
+        </LinearLayout>
+
+       <!-- Commented on 17/11/2021
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player"
+                android:layout_weight="1"
+                android:id="@+id/txt_slno_a"
+                android:textColor="@color/colorText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:text="Name "
+                android:layout_weight="15"
+                android:id="@+id/txt_name_a"
+                android:textColor="@color/colorText"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="ADD PLAYER"
+                android:id="@+id/btn_add_players_a"
+                android:background="@drawable/mybutton"
+                android:longClickable="true"
+                android:paddingLeft="2dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:paddingRight="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="20"
+            android:id="@+id/ll_details_a" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:id="@+id/total_players_a"
+                android:layout_weight="1.5"
+                 />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:id="@+id/edit_player_name_a"
+                android:capitalize="words"
+                android:cursorVisible="true"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.5" />
+
+        </LinearLayout>-->
+
+<!--        Added on 17/11/2021-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Player"
+                android:layout_weight="6.4"
+                android:id="@+id/txt_slno_a"
+                android:textColor="@color/colorText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:text="Name "
+                android:layout_weight="3.5"
+                android:id="@+id/txt_name_a"
+                android:textColor="@color/colorText"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="5.1"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="NEXT"
+                    android:id="@+id/btn_next_a"
+                    android:background="@drawable/mybutton"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="15"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:id="@+id/ll_details_a" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:id="@+id/total_players_a"
+                android:layout_weight="6.8" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.1"
+                android:id="@+id/edit_player_name_a"
+                android:capitalize="words"
+                android:cursorVisible="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="5.1"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="ADD PLAYER"
+                    android:id="@+id/btn_add_players_a"
+                    android:background="@drawable/mybutton"
+                    android:longClickable="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_add_player_a">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_player_list_a"
+                android:layout_margin="10dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

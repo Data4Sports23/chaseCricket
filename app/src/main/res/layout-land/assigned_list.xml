@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customborder"
+        android:weightSum="10"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/slno"
+            android:text=""
+            android:gravity="center"
+            android:layout_weight="4.7"
+            android:paddingLeft="3dp"
+            android:paddingStart="3dp"
+            android:paddingRight="2dp"
+            android:paddingEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_gravity="center"
+            android:singleLine="false"
+            android:textColor="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:paddingLeft="3dp"
+            android:paddingStart="3dp"
+            android:paddingRight="2dp"
+            android:paddingEnd="2dp"
+            android:orientation="vertical"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team"
+
+                android:layout_gravity="center"
+                android:singleLine="false"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type"
+                android:layout_gravity="center"
+                android:singleLine="false"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/save_to_device"
+                android:text="View Details"
+                android:background="@drawable/mybutton"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:singleLine="false"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

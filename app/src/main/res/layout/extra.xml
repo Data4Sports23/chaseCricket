@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ScoringActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutEXTRA"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/arrow_back"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:id="@+id/extra_back"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:paddingEnd="20dp"
+                android:tint="@color/colorText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Extras"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorText"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:text="  ExtraType  "
+                android:id="@+id/btn_extras_type"
+                android:onClick="onClick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_extras_type"
+                android:background="@drawable/customborder"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="Select Extra Type"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="20"
+            android:id="@+id/ll_e_extras"
+            android:visibility="gone">
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/txt_extra_runs"-->
+                <!--android:hint="Extra"-->
+                <!--android:layout_weight="16"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginStart="15dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_extra_run_extra"
+                android:background="@drawable/customborder"
+                android:hint=" Runs "
+                android:layout_weight="5.5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:cursorVisible="true"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+
+
+            <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/edit_runs_off_bat"-->
+            <!--android:hint="Runs of Bat"-->
+            <!--android:layout_weight="5"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:inputType="number"/>-->
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/btn_extras_runs_off_bat"-->
+                <!--android:text="Runs off bat"-->
+                <!--android:background="@drawable/mybutton"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_weight="18"-->
+                <!--android:onClick="onClick"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/txt_runs_off_bat"-->
+                <!--android:hint="Runs Off Bat"-->
+                <!--android:layout_weight="16"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginStart="15dp"/>-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_run_off_bat_extra"
+                android:background="@drawable/customborder"
+                android:hint="Runs off bat"
+                android:layout_weight="4.25"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:inputType="number"
+                android:cursorVisible="true"
+                android:textSize="15sp"
+                android:text=""
+                android:visibility="gone"/>
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="15dp"-->
+
+
+
+
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--&gt;-->
+
+            <!--&lt;!&ndash;<CheckBox&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="Penalty"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/check_penalty"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="PENALTY"-->
+                <!--android:id="@+id/btn_extras_penalty"-->
+                <!--android:background="@drawable/mybutton"-->
+                <!--android:onClick="onClick"/>-->
+        <!--</LinearLayout>-->
+
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout_penalty"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:text="Penalty"
+                android:id="@+id/btn_extras_penalty"
+                android:onClick="onClick" />
+
+            &lt;!&ndash; Commented on 18/03/2021
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_weight="6"/>&ndash;&gt;
+
+            &lt;!&ndash;Added on 18/03/2021&ndash;&gt;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_extras_penalty"
+                android:background="@drawable/customborder"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:hint="Penalty"
+                android:gravity="center"/>
+
+            &lt;!&ndash;<Button&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/btn_exrtas_change_penalty_run"&ndash;&gt;
+
+                &lt;!&ndash;android:gravity="center"&ndash;&gt;
+                &lt;!&ndash;android:layout_weight="4"&ndash;&gt;
+                &lt;!&ndash;android:background="@drawable/mybutton"&ndash;&gt;
+                &lt;!&ndash;android:onClick="onClick"&ndash;&gt;
+                &lt;!&ndash;android:text=" set penalty run"/>&ndash;&gt;
+
+
+        </LinearLayout>
+-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:id="@+id/layout_out_com">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="38dp"
+                android:background="@drawable/mybutton"
+                android:text="COM"
+                android:id="@+id/btn_extras_com"
+                android:onClick="onClick"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_extras_com"
+                android:background="@drawable/customborder"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="next"
+            android:background="@drawable/mybutton"
+            android:id="@+id/bt_extras_next"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="end"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MatchDetailsActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutMatchDetails"
+    android:background="#ffffff"
+    android:padding="3dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customborder"
+        android:layout_margin="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Match Details"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorText"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="6.1"
+                    android:text="Game Id  : "
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gameid"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="3.9"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Team A"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_teamA"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Team B"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_teamB"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Event"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_event"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Phase "
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_phase"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Venue"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_venue"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="End 1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_end1"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="End 2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_end2"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Match Type"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_match_type"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+
+            <!--            Added on 09/12/2021-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Scheduled Over"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_over"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Balls/Over"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_bpo"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Max. Overs/Bowler"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_opb"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Team A Players"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_playersA"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Team B Players"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_plauersB"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+            <!--            till here-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Match Date"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_match_date"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Umpire 1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_umpire1"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Umpire 2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_umpire2"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Umpire 3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_umpire3"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Umpire 4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_umpire4"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:showDividers="end"
+                android:orientation="horizontal"
+                android:weightSum="15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="3dp"
+                    android:paddingEnd="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingStart="1dp"
+                    android:layout_weight="4.9"
+                    android:text="Match Referee"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/md_tv_match_referee"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="3.1"
+                    android:textColor="@color/colorBlack"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivision"
+                android:layout_marginBottom="10dp"/>
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:showDividers="end"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:gravity="end">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text=" PULL SQUAD DETAILS "
+                    android:id="@+id/pull_squad"
+                    android:background="@drawable/mybutton" />
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

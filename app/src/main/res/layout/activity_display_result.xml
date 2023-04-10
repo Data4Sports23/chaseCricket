@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DisplayResultActivity"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/customborder"
+        android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="result"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="team A"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:id="@+id/result_teamA"
+            android:singleLine="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vs"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="team B"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:id="@+id/result_teamB"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:singleLine="false"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/mybutton"
+                    android:id="@+id/result_edit_result"
+                    android:text="edit result"
+                    android:onClick="onClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp">
+
+                <TextView
+                    android:id="@+id/txt_edit_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customborder"
+                    android:gravity="center"
+                    android:singleLine="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:id="@+id/result_ll_man_of_match"
+            android:gravity="center"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/mybutton"
+                android:id="@+id/result_man_of_match"
+                android:text="man of the match"
+                android:textSize="13sp"
+                android:onClick="onClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+                android:id="@+id/txt_man_of_match"
+                android:gravity="center"
+                android:singleLine="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        Added on 03/09/2021-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/result_ll_match_details"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/mybutton"
+                    android:id="@+id/result_match_details"
+                    android:text="MATCH DETAILS"
+                    android:onClick="onClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--         till here-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/mybutton"
+                android:id="@+id/result_score_card"
+                android:text="scorecard"
+                android:onClick="onClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+                android:gravity="center"
+                android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/mybutton"
+                android:id="@+id/result_server_sync"
+                android:text="Server sync"
+                android:onClick="onClick"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customborder"
+                android:gravity="center"
+                android:id="@+id/txt_server_sync"
+                android:singleLine="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

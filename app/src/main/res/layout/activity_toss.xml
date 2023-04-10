@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:layout_margin="2dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/customborder">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="TOSS won by..."
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:shadowRadius="25"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingStart="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="team "
+                android:gravity="center"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorRequired"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_margin="7dp"
+            android:layout_gravity="center"
+            >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="40dp"
+                android:id="@+id/toss_rg">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="teamA"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/toss_teamA_rb"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onClick"
+                    android:textColor="@color/colorText"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="teamB"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/toss_teamB_rb"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onClick"
+                    android:textColor="@color/colorText"
+                    android:textStyle="italic"
+                    android:textAllCaps="true"/>
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="chooses..."
+                android:gravity="center"
+                android:textColor="@color/colorText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/colorRequired"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="40dp"
+                android:id="@+id/toss_decision_rg">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batting"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/toss_batting"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onClick"
+                    android:textColor="@color/colorText"
+                    android:textStyle="italic"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fielding"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/toss_fielding"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onClick"
+                    android:textColor="@color/colorText"
+                    android:textStyle="italic"/>
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/toss_next_btn"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mybutton"/>
+
+    </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

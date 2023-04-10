@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity"
+    android:background="@color/colorBackGround">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="15dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="25dp"
+        android:paddingStart="25dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:id="@+id/editEmail"
+            android:background="@drawable/customborder"
+            android:inputType="textEmailAddress"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="10dp">
+<!--            android:background="@drawable/customborder">-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/editLoginPassword"
+                android:layout_weight="1"
+                android:background="@drawable/customborder"/>
+
+<!--            <ImageButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/_password"-->
+<!--                app:srcCompat="@drawable/ic_visibility_black_24dp"-->
+<!--                android:layout_weight="9"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:clickable="true"-->
+<!--                android:focusableInTouchMode="true"-->
+<!--                android:background="@color/colorWhite"/>-->
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/btnloginpage"
+            android:background="@drawable/mybutton"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv_forget_password"
+            android:text="Forget Password?"
+            android:textColor="@color/colorText"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:text="New User?"
+           android:textColor="@color/colorText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="New Registration"
+            android:textColor="@color/colorLink"
+            android:id="@+id/tv_new_reg"/>
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NEW REGISTRATION"-->
+<!--            android:id="@+id/btnloginRegister"-->
+<!--            android:background="@drawable/mybutton"-->
+<!--            android:layout_marginTop="20dp"/>-->
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

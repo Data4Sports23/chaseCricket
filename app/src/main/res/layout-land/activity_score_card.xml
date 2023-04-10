@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ScoreCardActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="30"
+                android:fitsSystemWindows="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_teamA_sc"
+                    android:text="Team A "
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:singleLine="false"
+                    android:layout_weight="8"
+                    android:gravity="end"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" vs "
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_weight="13.7"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_teamB_sc"
+                    android:text="Team B  "
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:singleLine="false"
+                    android:layout_weight="8"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_matchType_sc"
+                    android:text="T20"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="match"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_innings_sc"
+                    android:text="1st innings"
+                    android:textColor="@color/colorBlack"/>
+
+<!--                Added on 02/03/2021-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_message"
+                    android:text="1st innings"
+                    android:textColor="@color/colorBlack"/>
+<!--                till here (02/03/2021-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/battingTeam"
+                android:textSize = "17sp"
+                android:text="team A"
+                android:layout_marginLeft="50dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:singleLine="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ("
+                android:layout_marginLeft="70dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/braces_open"/>
+<!--                android:textSize = "17sp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="run"
+                android:id="@+id/txt_display_run"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+<!--            android:textSize = "17sp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/sc_div"
+                android:visibility="visible"/>
+<!--            android:textSize = "17sp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wicket"
+                android:id="@+id/txt_display_wicket"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:visibility="visible"/>
+<!--            android:textSize = "17sp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/braces_close"/>
+<!--            android:textSize = "17sp"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="over"
+                android:id="@+id/txt_display_over"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/batting_table" />
+
+        </HorizontalScrollView>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extracard">
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/fow_hsv"
+            android:visibility="gone">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fow">
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fieldingTeam"
+                android:textSize = "19sp"
+                android:text="team B"
+                android:layout_marginLeft="50dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:singleLine="false"
+                android:layout_marginStart="50dp" />
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fielding_table">
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:id="@+id/previousinnings"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize = "19sp"
+                android:text="Previous Innings"
+                android:layout_marginLeft="50dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:weightSum="20">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/first_innings"
+                android:text="1st"
+                android:background="@drawable/mybutton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:visibility="invisible"
+                android:layout_weight="5"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/second_innings"
+                android:text="2nd"
+                android:background="@drawable/mybutton"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                android:layout_weight="5"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_innings"
+                android:text="3rd"
+                android:background="@drawable/mybutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                android:layout_weight="5"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forth_innings"
+                android:text="4th"
+                android:background="@drawable/mybutton"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:visibility="invisible"
+                android:layout_weight="5"/>
+
+            <!--<Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:id="@+id/so1_innings"
+                android:text="SO 1"
+                android:background="@drawable/mybutton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:visibility="invisible"
+                android:layout_weight="5"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:id="@+id/so2_innings"
+                android:text="SO 2"
+                android:background="@drawable/mybutton"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:visibility="invisible"
+                android:layout_weight="5"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_endofmatch"
+        android:weightSum="10"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_enter_result"
+            android:text="Enter Result"
+            android:background="@drawable/mybutton"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_next_innings"
+            android:text="START NEXT INNINGS"
+            android:background="@drawable/mybutton"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

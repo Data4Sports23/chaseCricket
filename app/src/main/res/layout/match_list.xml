@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+
+    <!--<LinearLayout
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    android:id="@+id/list_match"
+    android:background="@drawable/customborder"
+    android:layout_marginLeft="3dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="10dp"
+    android:weightSum="25">
+
+    <TextView
+        android:id="@+id/list_slno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.6"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_teams"
+        android:text="aa vs bb  gseg se ges grt hetg het ht htr ertet  sargferert  rw  et e   wer wr ewr er"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="false"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:layout_weight="3.1"/>
+
+    <ImageView
+        android:id="@+id/list_resume_score"
+        android:layout_width="325dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="5.1"
+        android:src="@drawable/edit"
+        android:tint="@color/colorText"
+        />
+
+    <ImageView
+        android:id="@+id/list_view_score"
+        android:layout_width="325dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="5.1"
+        android:tint="@color/colorText"
+        app:srcCompat="@drawable/ic_visibility" />
+
+    <ImageView
+        android:id="@+id/list_delete_score"
+        android:layout_width="325dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_weight="5.1"
+        android:src="@drawable/delete"
+        android:tint="@color/colorDelete" />-->
+<!--    </LinearLayout>-->
+
+
+
+
+<!--        app:srcCompat="@drawable/visibility" />-->
+
+
+
+</LinearLayout>

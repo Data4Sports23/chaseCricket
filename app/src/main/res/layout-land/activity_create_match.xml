@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateMatchActivity"
+    android:background="@color/colorBackGround">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ENTER MATCH DETAILS"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorTextHeading"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Team A "
+                            android:id="@+id/txt_team_A"
+                            android:textColor="@color/colorText"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_team_A"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:cursorVisible="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Team B "
+                            android:id="@+id/txt_team_B"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_team_B"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Event "
+                            android:id="@+id/txt_event"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_event"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phase "
+                            android:id="@+id/txt_event_phase"
+                            android:textColor="@color/colorText"/>
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>-->
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_event_phase"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Venue "
+                            android:id="@+id/txt_venue"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_venue"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingRight="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="End 1"
+                        android:id="@+id/txt_venue_end1"
+                        android:textColor="@color/colorText"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_venue_end1"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingRight="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="End 2"
+                        android:id="@+id/txt_venue_end2"
+                        android:textColor="@color/colorText"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_venue_end2"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Match Type "
+                            android:id="@+id/txt_match_type"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/rgroup_match_type">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="T20"
+                            android:paddingRight="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingLeft="0dp"
+                            android:id="@+id/rb_T20"
+                            android:onClick="onClick"
+                            android:textColor="@color/colorText"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OD"
+                            android:paddingRight="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="1dp"
+                            android:id="@+id/rb_ODI"
+                            android:onClick="onClick"
+                            android:textColor="@color/colorText"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MD"
+                            android:paddingRight="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="1dp"
+                            android:id="@+id/rb_Test"
+                            android:onClick="onClick"
+                            android:textColor="@color/colorText"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_Custom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:onClick="onClick"
+                            android:selectAllOnFocus="false"
+                            android:text="Custom"
+                            android:textColor="@color/colorText"
+                            android:paddingRight="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="1dp"
+                            />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100s"
+                            android:paddingRight="5dp"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="1dp"
+                            android:id="@+id/rb_100"
+                            android:onClick="onClick"
+                            android:textColor="@color/colorText"/>
+
+
+                    </RadioGroup>
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="match_parent"-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/custom_innings"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Innings "
+                            android:id="@+id/txt_innings"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="* "
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/rgroup_innings">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Single"
+                                android:onClick="onClick"
+                                android:paddingRight="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingStart="0dp"
+                                android:paddingLeft="0dp"
+                                android:id="@+id/rb_single"
+                                android:textColor="@color/colorText"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Multi"
+                                android:onClick="onClick"
+                                android:paddingRight="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingStart="0dp"
+                                android:paddingLeft="0dp"
+                                android:id="@+id/rb_multi"
+                                android:textColor="@color/colorText"/>
+
+
+                        </RadioGroup>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkbox_limited_overs"
+                            android:text="Limited Overs"
+                            android:textColor="@color/colorText"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/custom_overs"
+                    android:weightSum="20"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Overs "
+                            android:id="@+id/txt_overs"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:id="@+id/edit_overs"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Balls/Over "
+                            android:id="@+id/txt_balls_per_over"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:id="@+id/edit_balls_per_over"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp" />
+
+
+                </LinearLayout>
+
+
+<!--            COMMENTED ON 06/12/2021
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/custom_players"
+                    android:weightSum="20"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No: of Players "
+                            android:id="@+id/txt_no_of_players"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:id="@+id/edit_no_of_player"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Subst "
+                            android:id="@+id/txt_subst_players"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:id="@+id/edit_subst_playes"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp" />
+
+
+                </LinearLayout>
+-->
+
+<!--                ADDED ON 06/12/2021-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/custom_players"
+                    android:weightSum="20"
+                    android:visibility="gone"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Player/side"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:weightSum="25"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Team A Players : "
+                            android:layout_weight="5.1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorText"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:id="@+id/edit_player_teamA"
+                            android:gravity="center"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5.8" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Team B Players : "
+                            android:layout_weight="5.1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorText"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4.5"
+                            android:id="@+id/edit_player_teamB"
+                            android:inputType="number"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--                till here-->
+
+<!--                Added on 08/07/2021-->
+<!--
+                Commented on 08/07/2021
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/ll_days"
+                    android:weightSum="20"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="No: of Days "
+                            android:id="@+id/txt_no_of_days"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:id="@+id/edit_no_of_days"
+                        android:inputType="number"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp" />
+
+
+                </LinearLayout>
+-->
+
+                <!--                -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/custom_values"
+                    android:weightSum="20"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Change Values"
+                        android:textColor="@color/colorText" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_change_wide_run"
+                            android:text="Wide Run"
+                            android:background="@drawable/mybutton"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:onClick="onClick"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_change_noball_run"
+                            android:text="Noball Run"
+                            android:background="@drawable/mybutton"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:onClick="onClick"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btn_change_penalty_run"
+                            android:text="Penalty Run"
+                            android:background="@drawable/mybutton"
+                            android:onClick="onClick"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+<!--                Added on 08/07/2021-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/ll_max_opb">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maximum Overs/Bowler "
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_max_opb"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLength="2"/>
+
+                </LinearLayout>
+
+                <!--                -->
+
+<!--                Added on 30/07/2021-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/ll_max_bpb">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maximum Balls/Bowler "
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_max_bpb"
+                        android:text="20"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:maxLength="2"/>
+
+                </LinearLayout>
+
+<!--                till here-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="10dp">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkbox_wagon_wheel"
+                        android:text=" Display Wagonwheel  "
+                        android:textColor="@color/colorText"/>
+
+                    <!--                <TextView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="*"-->
+                    <!--                    android:textColor="@color/colorRequired"/>-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date "
+                            android:id="@+id/txt_event_date"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_event_date"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="YYYY-MM-DD"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Umpire 1"
+                            android:id="@+id/txt_umpire1"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_umpire1"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Umpire 2"
+                            android:id="@+id/txt_umpire2"
+                            android:textColor="@color/colorText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/colorRequired"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_umpire2"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 3"
+                        android:id="@+id/txt_umpire3"
+                        android:textColor="@color/colorText"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_umpire3"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 4"
+                        android:id="@+id/txt_umpire4"
+                        android:textColor="@color/colorText"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_umpire4"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scorer"
+                        android:id="@+id/txt_scorer"
+                        android:textColor="@color/colorText"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_scorer"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Match Referee"
+                        android:id="@+id/txt_match_referee"
+                        android:textColor="@color/colorText"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edit_match_referee"
+                        android:inputType="textCapWords"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ground_man1_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:weightSum="10"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingLeft="7dp"-->
+<!--                    android:paddingStart="7dp"-->
+<!--                    android:paddingRight="3dp"-->
+<!--                    android:paddingEnd="3dp"-->
+<!--                    android:layout_marginTop="17dp">-->
+
+<!--                    &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:text="Ground Man 1  :"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:textColor="@color/colorBlack"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_weight="3"/>&ndash;&gt;-->
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/spinner1"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="3"-->
+<!--                        app:hintText="a:"-->
+<!--                        android:spinnerMode="dropdown" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/ground_man1"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:textColor="@color/colorBlack"-->
+<!--                        android:inputType="text"/>-->
+<!--                    &lt;!&ndash;android:background="@drawable/styyles"-->
+<!--                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>&ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/ground_man1_add"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:srcCompat="@drawable/ic_add"-->
+<!--                        android:tint="@color/colorBlack"/>-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/ground_man1_delete"-->
+<!--                        android:src="@drawable/delete"-->
+<!--                        android:layout_gravity="center" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ground_man2_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:weightSum="10"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingLeft="7dp"-->
+<!--                    android:paddingStart="7dp"-->
+<!--                    android:paddingRight="3dp"-->
+<!--                    android:paddingEnd="3dp"-->
+<!--                    android:layout_marginTop="17dp">-->
+
+<!--                    &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:text="Ground Man 2  :"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:textColor="@color/colorBlack"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_weight="3"/>&ndash;&gt;-->
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/spinner2"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="3"-->
+<!--                        app:hintText="b:"-->
+<!--                        android:spinnerMode="dropdown" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/ground_man2"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:textColor="@color/colorBlack"-->
+<!--                        android:inputType="text"/>-->
+<!--                    &lt;!&ndash;android:background="@drawable/styyles"-->
+<!--                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>&ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:id="@+id/ground_man2_add"-->
+<!--                        app:srcCompat="@drawable/ic_add"-->
+<!--                        android:tint="@color/colorBlack"/>-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/ground_man2_delete"-->
+<!--                        android:src="@drawable/delete"-->
+<!--                        android:layout_gravity="center" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ground_man3_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:weightSum="10"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingLeft="7dp"-->
+<!--                    android:paddingStart="7dp"-->
+<!--                    android:paddingRight="3dp"-->
+<!--                    android:paddingEnd="3dp"-->
+<!--                    android:layout_marginTop="17dp">-->
+
+<!--                    &lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:text="Ground Man 3  :"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:textColor="@color/colorBlack"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        android:layout_weight="3"/>&ndash;&gt;-->
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/spinner3"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="3"-->
+<!--                        app:hintText="c:"-->
+<!--                        android:spinnerMode="dropdown" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/ground_man3"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:textColor="@color/colorBlack"-->
+<!--                        android:inputType="text"/>-->
+<!--                    &lt;!&ndash;android:background="@drawable/styyles"-->
+<!--                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>&ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:id="@+id/ground_man3_add"-->
+<!--                        app:srcCompat="@drawable/ic_add"-->
+<!--                        android:tint="@color/colorBlack"/>-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/ground_man3_delete"-->
+<!--                        android:src="@drawable/delete"-->
+<!--                        android:layout_gravity="center" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ground_man4_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:weightSum="10"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingLeft="7dp"-->
+<!--                    android:paddingStart="7dp"-->
+<!--                    android:paddingRight="3dp"-->
+<!--                    android:paddingEnd="3dp"-->
+<!--                    android:layout_marginTop="17dp">-->
+
+<!--                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+<!--                        android:id="@+id/spinner4"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="3"-->
+<!--                        app:hintText="d:"-->
+<!--                        android:spinnerMode="dropdown" />-->
+
+<!--                    <EditText-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/ground_man4"-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:textColor="@color/colorBlack"-->
+<!--                        android:inputType="text"/>-->
+<!--                    &lt;!&ndash;android:background="@drawable/styyles"-->
+<!--                    android:text="ws ef wrefewr fr fgerg erg erg erg eg rterg erger er gergggggggggggggggggggggggggggggggggggg"/>&ndash;&gt;-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:id="@+id/ground_man4_add"-->
+<!--                        app:srcCompat="@drawable/ic_add"-->
+<!--                        android:tint="@color/colorBlack"/>-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/ground_man4_delete"-->
+<!--                        android:src="@drawable/delete"-->
+<!--                        android:layout_gravity="center" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="75dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:paddingLeft="10dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:paddingTop="10dp">-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="45dp"-->
+<!--                        android:text="NEXT"-->
+<!--                        android:id="@+id/btn_next"-->
+<!--                        android:background="@drawable/mybutton"/>-->
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

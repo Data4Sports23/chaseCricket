@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!---->
+<!--    <color name="colorPrimary">#00574B</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    -->
+    <color name="colorPrimary">#00574B</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#CC2C58</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorVersion">#494949</color>
+    <color name="colorDivision">#CCCCCC</color>
+
+    <color name="colorBackGround">#FFFFFF</color>
+    <color name="colorRequired">#D81B60</color>
+    <color name="colorTextHeading">#205014</color>
+    <color name="colorText">#205014</color>
+    <color name="colorDelete">#940A0A</color>
+    <color name="colorGray">#1A1A1A</color>
+    <color name="colorLink">#0072A5</color>
+    <color name="popupBackground">#CED1CE</color>
+</resources>

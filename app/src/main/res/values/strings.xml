@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Chase Cricket</string>
+    <string name="went_wrong"> Something went Wrong </string>
+    <string name="password_validation_msg">Password cannot be blank (Minimum 6 characters)</string>
+    <string name="cannot_match_password">Please make sure your passwords match</string>
+
+
+    <string name="title_activity_display">Display</string>
+    <string name="default_spinner_value">--Select--</string>
+    <string name="version_name"> Version 1.2.11.26 </string>
+
+    <!--    Added on 07/10/2021
+        For Headings
+-->
+
+    <string name="addmatchofficials">Add/Edit Match Officials</string>
+    <string name="addmatchofficials1">Match Officials</string>
+    <string name="addmatchnote">Add/Edit Match Note</string>
+    <string name="addplayers">Add/Edit Players</string>
+
+    <string-array name="extraTypeList">
+        <item>Byes</item>
+        <item>Leg Byes</item>
+        <item>Wide</item>
+        <item>Noball</item>
+    </string-array>
+
+    <string-array name="expandNoBallList">
+        <item>Bye</item>
+        <item>Leg Bye</item>
+        <item>Runs Off Bat</item>
+        <item>Boundary</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="penaltyTypeList">
+        <item>Fielding Penalty</item>
+        <item>Batting Penalty</item>
+    </string-array>
+
+    <string-array name="playerkStatus">
+        <item>Captain</item>
+        <item>Vice Captain</item>
+        <item>Wicketkeeper</item>
+        <item>normal</item>
+    </string-array>
+
+    <string-array name="powerplayType">
+        <item>Batting</item>
+        <item>Fielding</item>
+    </string-array>
+
+    <string-array name="penaltyBallCountList">
+        <item>Bowler Ball</item>
+        <item>Batsman Ball</item>
+    </string-array>
+
+    <string-array name="outTypeList">
+        <item>Bowled</item>
+        <item>Caught</item>
+        <item>Run out</item>
+        <item>Stumped</item>
+        <item>LBW</item>
+        <item>Hit Wicket</item>
+        <item>Hit the Ball Twice</item>
+        <item>Obstructing the Field</item>
+        <!--<item>Handled the Ball</item>-->
+        <item>Timed out</item>
+        <item>Retired Hurt</item>
+        <!-- <item>Absent</item> Commneted on 03/03/2021-->
+
+        <item>Retired Out</item>
+    </string-array>
+
+    <string-array name="sessionType">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="addExtraPeoples">
+        <item>Ground Man</item>
+        <item>Video Analyst</item>
+        <item>Curator</item>
+    </string-array>
+</resources>

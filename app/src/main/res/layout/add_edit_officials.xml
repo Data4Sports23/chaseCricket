@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddEditOfficials"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutPLAYERLIST"
+    android:background="#ffffff"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/customborder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/addmatchofficials1"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextHeading"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/aeo_ll_u1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 1"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorVersion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Abc"
+                            android:textSize="17sp"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/aeo_tv_u1" />
+
+                        <ImageView
+                            android:id="@+id/aeo_edit_u1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/edit"
+                            android:tint="@color/colorText"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/aeo_delete_u1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete"
+                            android:tint="@color/colorDelete"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/aeo_ll_u2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorVersion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Efg"
+                            android:textSize="17sp"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/aeo_tv_u2" />
+
+                        <ImageView
+                            android:id="@+id/aeo_edit_u2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/edit"
+                            android:tint="@color/colorText"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/aeo_delete_u2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete"
+                            android:tint="@color/colorDelete"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/aeo_ll_u3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 3"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorVersion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hijk"
+                            android:textSize="17sp"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/aeo_tv_u3" />
+
+                        <ImageView
+                            android:id="@+id/aeo_edit_u3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/edit"
+                            android:tint="@color/colorText"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/aeo_delete_u3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete"
+                            android:tint="@color/colorDelete"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/aeo_ll_u4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umpire 4"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorVersion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lmnop"
+                            android:textSize="17sp"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/aeo_tv_u4" />
+
+                        <ImageView
+                            android:id="@+id/aeo_edit_u4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/edit"
+                            android:tint="@color/colorText"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/aeo_delete_u4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete"
+                            android:tint="@color/colorDelete"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/aeo_ll_sc">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Scorer"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorVersion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pqr"
+                            android:textSize="17sp"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/aeo_tv_sc" />
+
+                        <ImageView
+                            android:id="@+id/aeo_edit_sc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/edit"
+                            android:tint="@color/colorText"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/aeo_delete_sc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete"
+                            android:tint="@color/colorDelete"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="11dp"
+                    android:id="@+id/aeo_ll_mr">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Match Referee"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorVersion" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:weightSum="15">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Stuv"
+                            android:textSize="17sp"
+                            android:layout_weight="1.5"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/aeo_tv_mr" />
+
+                        <ImageView
+                            android:id="@+id/aeo_edit_mr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/edit"
+                            android:tint="@color/colorText"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                        <ImageView
+                            android:id="@+id/aeo_delete_mr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/delete"
+                            android:tint="@color/colorDelete"
+                            android:layout_weight="6.75"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

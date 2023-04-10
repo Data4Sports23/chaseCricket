@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OpenersActivity"
+    android:background="@color/colorBackGround"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/customborder">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Opening Batsman and Bowler"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorTextHeading"
+            android:shadowRadius="25"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Team 1"
+                android:gravity="center"
+                android:id="@+id/txt_batting_team"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText"
+                android:textStyle="italic"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Striker"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_weight="7.5"
+                android:textColor="@color/colorText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_weight="2.5" >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/strkr_teamA_spinner"
+                    android:paddingLeft="3dp"
+                    android:paddingStart="3dp"
+                    android:paddingRight="1dp"
+                    android:paddingEnd="1dp"
+                    android:gravity="center_horizontal">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Non Striker"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_weight="7.5"
+                android:textColor="@color/colorText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_weight="2.5" >
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nstrkr_teamA_spinner"
+                android:paddingLeft="3dp"
+                android:paddingStart="3dp"
+                android:paddingRight="1dp"
+                android:paddingEnd="1dp"
+                android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Team 2"
+                android:gravity="center"
+                android:id="@+id/txt_fielding_team"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText"
+                android:textStyle="italic"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bowler"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_weight="7.5"
+                android:textColor="@color/colorText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_weight="2.5" >
+
+                <Spinner
+                    android:id="@+id/bwlr_teamB_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="3dp"
+                    android:paddingStart="3dp"
+                    android:paddingRight="1dp"
+                    android:paddingEnd="1dp"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginTop="2dp"-->
+<!--            android:layout_marginBottom="2dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:weightSum="10"-->
+<!--            android:id="@+id/ll_next_bowler">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="1st Change"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_weight="8"-->
+<!--                android:textColor="@color/colorText"/>-->
+
+<!--            <Spinner-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:id="@+id/nbwlr_teamB_spinner"-->
+<!--                android:layout_weight="2"-->
+<!--                android:paddingLeft="5dp"-->
+<!--                android:paddingStart="5dp"-->
+<!--                android:paddingRight="3dp"-->
+<!--                android:paddingEnd="3dp"-->
+<!--                android:textAlignment="center">-->
+
+<!--            </Spinner>-->
+
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/opener_next_btn"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mybutton"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/test"-->
+        <!--android:text="hello"/>-->
+
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

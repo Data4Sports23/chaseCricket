@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.data4sports.chasecricket">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".models.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ball"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activities.ToastActivity"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activities.ConfirmBXI"
+            android:exported="true" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activities.ConfirmAXI"
+            android:exported="true" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activities.AddEditOfficials"
+            android:exported="true" />
+        <activity
+            android:name=".activities.SubscribeDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PlayerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MatchDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MatchNoteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MidScoringActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SavePulledEventActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ScheduledService"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".activities.AddPlayersB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddPlayersA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddSquad"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddMatchOfficials"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SucessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait" /> <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> -->
+        <activity
+            android:name=".activities.CreateMatchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddPlayers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PulledMatchDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SelectTeamAXIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SelectTeamBXIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CaptainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TossActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OpenersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScoringActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdatedScoringActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ScoreCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MatchListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DisplayResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PlayerList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PowerPlay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AssignedMatchListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WagonWheel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SubstitutionActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".activities.ScheduledService"
+            android:enabled="true"
+            android:icon="@drawable/ball"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

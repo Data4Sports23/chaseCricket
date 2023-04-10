@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PowerPlay"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/customborder"
+    android:id="@+id/ll_powerplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Set  PowerPlay"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="25"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="5.5" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_start_pp"
+            android:inputType="number"
+            android:layout_weight="5.2"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="End"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="5"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="45dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_end_pp"
+            android:inputType="number"
+            android:layout_weight="5."
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mybutton"
+            android:text="Power Play Type"
+            android:layout_weight="4.5"
+            android:id="@+id/btn_pptype"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_set_pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:text="  add powerplay  " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pp_table"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MatchNoteListActivity"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/customborder"
+    android:id="@+id/ll_powerplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/addmatchnote"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter match note"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="10dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:singleLine="false"
+            android:id="@+id/et_note"
+            android:layout_weight="3.5"
+            android:layout_marginLeft="3dp"
+            android:paddingLeft="12dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/styyles"
+            android:layout_marginStart="3dp"
+            android:layout_marginBottom="20dp"
+            android:maxLength="300"
+            android:gravity="top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/mybutton"
+            android:text=" Add Note  "
+            android:layout_gravity="end"
+            android:id="@+id/btn_add_note" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/ll_previous_notes">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous notes"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="5dp"/>
+
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <TableLayout
+                        android:id="@+id/notes_table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:divider="@color/colorVersion"
+                        android:orientation="horizontal"
+                        android:padding="5dip"
+                        android:showDividers="middle"
+                        android:stretchColumns="*" />
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+<!--        </ScrollView>-->
+
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
